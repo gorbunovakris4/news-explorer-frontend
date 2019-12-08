@@ -1,37 +1,57 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const FileLoader = require('file-loader');
-const ImageWebpackLoader = require('image-webpack-loader');
-const PostCssLoader = require('postcss-loader');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const webpack = require('webpack');
+const cssnano = require('cssnano');
+
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: {
+    main: './src/index.js',
+    about: './src/pages/about/index.js',
+    articles: './src/pages/articles/index.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    // eslint-disable-next-line arrow-body-style
+    filename: (chunkData) => {
+      return chunkData.chunk.name === 'main' ? '[name].[hash].js' : '[name]/[name].[hash].js';
+    },
   },
   module: {
     rules: [
       {
         test: /\.js$/,
+        use: { loader: 'babel-loader' },
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: '../' },
+          },
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.join(__dirname, '/postcss.config.js'),
+              },
+            },
+          },
+        ],
       },
 
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader,  { loader: 'css-loader', options: { importLoaders: 1 } }, 'postcss-loader', {
-          loader: 'postcss-loader',
-          options: {
-            config: {
-              path: './'
-            }
-          }
-        }]
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=./vendor/[name].[ext]',
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
@@ -42,39 +62,58 @@ module.exports = {
             options: {
               mozjpeg: {
                 progressive: true,
-                quality: 65
+                quality: 85,
               },
-              // optipng.enabled: false will disable optipng
               optipng: {
                 enabled: false,
               },
               pngquant: {
-                quality: '65-90',
-                speed: 4
+                quality: 90,
+                speed: 4,
               },
               gifsicle: {
                 interlaced: false,
-              }
-            }
+              },
+            },
           },
         ],
+
       },
-      {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/[name].[ext]'
-      }
-    ]
+    ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ //
-      filename: 'index.[contenthash].css',
+    new MiniCssExtractPlugin({
+      filename: 'css/style.[contenthash].css',
+    }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/g,
+      cssProcessor: cssnano,
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }],
+      },
+      canPrint: true,
     }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
     }),
-    new WebpackMd5Hash()
-  ]
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/articles/index.html',
+      filename: 'articles/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/about/index.html',
+      filename: 'about/index.html',
+    }),
+    new WebpackMd5Hash(),
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+    }),
+  ],
 };
