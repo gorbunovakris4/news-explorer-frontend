@@ -1,4 +1,4 @@
-.auth-form__input {
+.authpopup__input {
   font-family: Roboto;
   font-size: 0.87rem;
   width: 100%;
@@ -11,6 +11,6 @@
   border-bottom: 1px solid #cccccc;
 }
 
-.auth-form__input::placeholder {
+.authpopup__input::placeholder {
   color: #cccccc;
 }

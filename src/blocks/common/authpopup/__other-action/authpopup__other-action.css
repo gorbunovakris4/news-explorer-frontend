@@ -1,6 +1,6 @@
-@import url(./_left/auth-form__other-action_left.css);
+@import url(./_left/authpopup__other-action_left.css);
 
-.auth-form__other-action {
+.authpopup__other-action {
   font-family: Roboto;
   font-size: 0.87rem;
   display: block;
@@ -8,7 +8,7 @@
   color: black;
 }
 
-.auth-form__other-action .auth-form__other-action-click {
+.authpopup__other-action .authpopup__other-action-click {
   color: #2f71e5;
   text-decoration: none;
   cursor: pointer;

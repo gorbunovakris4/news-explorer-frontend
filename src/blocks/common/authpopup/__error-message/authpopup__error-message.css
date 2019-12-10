@@ -1,0 +1,9 @@
+@import url(./_hide/authpopup__error-message_hide.css);
+@import url(./_usr-exists/authpopup__error-message_usr-exists.css);
+.authpopup__error-message {
+  display: inline-block;
+  width: 100%;
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin: 0;
+}

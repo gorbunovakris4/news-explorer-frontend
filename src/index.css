@@ -10,7 +10,7 @@
 @import url(blocks/common/about/about.css);
 @import url(blocks/common/footer/footer.css);
 @import url(blocks/common/body-noscroll/body-noscroll.css);
-@import url(blocks/common/auth-form/auth-form.css);
+@import url(blocks/common/authpopup/authpopup.css);
 
 body {
     background-color: white;
