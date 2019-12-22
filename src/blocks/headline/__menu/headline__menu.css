@@ -5,3 +5,11 @@
    margin-right: 104px;
    align-items: baseline;
 }
+
+@media screen and (max-width: 1023px) {
+   .headline__menu {
+     font-size: 20px;
+     line-height: 24px;
+     margin-right: 40px;
+   }
+ }

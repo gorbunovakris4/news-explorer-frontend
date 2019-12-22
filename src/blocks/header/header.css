@@ -6,3 +6,9 @@
   background-size: cover;
   overflow-x: hidden;
 }
+
+@media screen and (max-width: 1023px) {
+  .header {
+    height: calc(100vw * 0.6);
+  }
+}

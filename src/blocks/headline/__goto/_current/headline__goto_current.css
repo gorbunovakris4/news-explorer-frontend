@@ -5,3 +5,10 @@
   border-bottom: 3px solid #FFFFFF;
   box-sizing: border-box;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .headline__goto.headline__goto_current {
+    height: 67px;
+  }
+}
