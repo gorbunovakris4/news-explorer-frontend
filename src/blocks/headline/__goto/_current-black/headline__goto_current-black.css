@@ -1,0 +1,7 @@
+.headline__goto_black.headline__goto_current-black {
+    color: black;
+    height: 81px;
+    padding-top: 28px;
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+}

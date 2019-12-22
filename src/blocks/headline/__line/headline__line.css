@@ -1,0 +1,10 @@
+@import url(./_current-page/headline__line_current-page.css);
+
+.headline__line {
+  position: absolute;
+  top: 77px;
+  width: 100vw;
+  height: 1px;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}

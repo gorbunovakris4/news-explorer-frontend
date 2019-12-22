@@ -1,0 +1,11 @@
+.headline__menu.headline__menu_mobile{
+    display: block;
+    width: 100vw;
+    min-width: 320px;
+    min-height: 300px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 56px;
+    background: #1A1B22;
+}

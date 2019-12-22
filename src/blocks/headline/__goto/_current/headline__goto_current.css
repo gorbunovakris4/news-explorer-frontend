@@ -1,0 +1,7 @@
+.headline__goto.headline__goto_current {
+  color: white;
+  height: 81px;
+  padding-top: 28px;
+  border-bottom: 3px solid #FFFFFF;
+  box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+@import url(./_auth/headline__goto_auth.css);
+@import url(./_current/headline__goto_current.css);
+@import url(./_mobile/headline__goto_mobile.css);
+@import url(./_current-black/headline__goto_current-black.css);
+@import url(./_black/headline__goto_black.css);
+@import url(./_leave-black/headline__goto_leave-black.css);
+
+.headline__goto {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  margin-right: 34px;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}

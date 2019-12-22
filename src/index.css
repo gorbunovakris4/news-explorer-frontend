@@ -1,17 +1,20 @@
-@import url(vendor/fonts.css);
-@import url(blocks/common/wrapper.css);
-@import url(blocks/header/header.css);
-@import url(blocks/menu/menu.css);
-@import url(blocks/common/button/button.css);
-@import url(blocks/common/preloader/preloader.css);
-@import url(blocks/common/card/card.css);
-@import url(blocks/preloader/preloader.css);
-@import url(blocks/results/results.css);
-@import url(blocks/common/about/about.css);
-@import url(blocks/common/footer/footer.css);
-@import url(blocks/common/body-noscroll/body-noscroll.css);
-@import url(blocks/common/authpopup/authpopup.css);
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/content/content.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/headline/headline.css);
+@import url(./blocks/load/load.css);
+@import url(./blocks/not-found/not-found.css);
+@import url(./blocks/search-results/search-results.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/about-author/about-author.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/preloader/preloader.css);
 
 body {
-    background-color: white;
+  background-color: #fff;  
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

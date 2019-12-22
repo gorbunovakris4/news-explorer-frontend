@@ -1,0 +1,17 @@
+@import url(./__author/swiper-slide__author.css);
+@import url(./__email/swiper-slide__email.css);
+@import url(./__date/swiper-slide__date.css);
+@import url(./__text/swiper-slide__text.css);
+@import url(./__photo/swiper-slide__photo.css);
+@import url(./__name/swiper-slide__name.css);
+
+.swiper-slide.swiper-slide_mine {
+    width: 400px;
+    height: 288px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+}

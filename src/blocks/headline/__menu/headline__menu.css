@@ -1,0 +1,7 @@
+@import url(./_mobile/headline__menu_mobile.css);
+
+.headline__menu {
+   display: flex;
+   margin-right: 104px;
+   align-items: baseline;
+}

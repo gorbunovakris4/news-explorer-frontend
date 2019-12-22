@@ -1,0 +1,11 @@
+import '../images/favicon.png';
+import '../images/fb.png';
+import '../images/github.png';
+import '../images/image-02.png';
+import '../images/picture.jpg';
+import '../images/not-found.svg';
+import '../images/out_black.svg';
+import '../images/technics/html.svg';
+import '../images/technics/css.svg';
+import '../images/technics/js.svg';
+import '../images/technics/webpack.svg';

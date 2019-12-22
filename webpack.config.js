@@ -10,15 +10,12 @@ const cssnano = require('cssnano');
 module.exports = {
   entry: {
     main: './src/index.js',
+    saved: './src/pages/saved/index.js',
     about: './src/pages/about/index.js',
-    articles: './src/pages/articles/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    // eslint-disable-next-line arrow-body-style
-    filename: (chunkData) => {
-      return chunkData.chunk.name === 'main' ? '[name].[hash].js' : '[name]/[name].[hash].js';
-    },
+    filename: (data) => (data.chunk.name === 'main' ? '[name].[hash].js' : '[name]/[name].[hash].js'),
   },
   module: {
     rules: [
@@ -102,8 +99,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/pages/articles/index.html',
-      filename: 'articles/index.html',
+      template: './src/pages/saved/index.html',
+      filename: 'saved/index.html',
     }),
     new HtmlWebpackPlugin({
       inject: false,

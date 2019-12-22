@@ -1,0 +1,5 @@
+.footer__networks {
+  list-style-type: none;
+  display: flex;
+  margin-right: 106px;
+}

@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
-import '../../vendor/normalize.css';
-import '../../../node_modules/swiper/css/swiper.min.css';
 import './index.css';
+import '../../vendor/images';
+import '../../../node_modules/swiper/css/swiper.min.css';
 import Swiper from 'swiper';
 
+// eslint-disable-next-line no-unused-vars
 const swiper = new Swiper('.swiper-container', {
   updateOnWindowResize: true,
   slidesPerView: 3,
@@ -32,7 +32,7 @@ const swiper = new Swiper('.swiper-container', {
     },
   },
   navigation: {
-    nextEl: '.swiper-button-next',
+    nextEl: '.swiper-button-next_mine',
     prevEl: '.swiper-button-prev',
   },
 });

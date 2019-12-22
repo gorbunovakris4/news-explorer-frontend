@@ -1,0 +1,27 @@
+.swiper-container.swiper-container_mine {
+  overflow: visible;
+}
+
+.swiper-button-next.swiper-button-next_mine {
+    margin: 0;
+    background-color: #1A1B22;
+    color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transform: translate(30px, -40px);
+    width: 50px;
+    height: 50px;
+    overflow: visible;
+}
+
+.swiper-button-prev.swiper-button-prev_mine {
+  margin: 0;
+  background-color: #1A1B22;
+  color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transform: translate(-30px, -40px);
+  width: 50px;
+  height: 50px;
+  overflow: visible;
+}

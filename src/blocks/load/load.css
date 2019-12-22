@@ -1,0 +1,6 @@
+@import url(./__message/load__message.css);
+
+.load {
+    height: 282px;
+    position: relative;
+}

@@ -1,0 +1,14 @@
+@import url(./__title/headline__title.css);
+@import url(./__menu/headline__menu.css);
+@import url(./__goto/headline__goto.css);
+@import url(./_mobile/headline_mobile.css);
+@import url(./_black/headline_black.css);
+
+.headline {
+  color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFFFFF;
+}

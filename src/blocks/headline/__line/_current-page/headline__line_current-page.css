@@ -1,0 +1,7 @@
+.headline__line.headline__line_current-page {
+  position: absolute;
+  top: 75px;
+  width: 69px;
+  height: 3px;
+  background: #FFFFFF;
+}

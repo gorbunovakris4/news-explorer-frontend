@@ -1,0 +1,17 @@
+@import url(./_del/card__icon_del.css);
+
+.card__icon {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../images/saveIcon/grey.svg);
+    position: absolute;
+    top:24px;
+    right:24px;
+    background-size: contain;
+}
+
+.card__icon:hover {
+    background-image: url(../../../images/saveIcon/black.svg);
+}

@@ -1,0 +1,8 @@
+.footer__menu {
+  list-style-type: none;
+  display: flex;
+  color: black;
+  align-self: center;
+  line-height: 24px;
+  padding-left: 0;
+}

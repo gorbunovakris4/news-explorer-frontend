@@ -1,28 +1,8 @@
-@import url(./__title/header__title.css);
-@import url(./__subtitle/header__subtitle.css);
-@import url(./__title-wrapper/header__title-wrapper.css);
-@import url(./__form/header__form.css);
-@import url(./__form-input/header__form-input.css);
-@import url(./__button/header__button.css);
-@import url(./_white/header_white.css);
-
 .header {
-  position: relative;
-  min-height: 576px;
-  background-repeat: no-repeat;
+  width: 100vw;
+  margin-top: 0;
+  height: calc(100vw * 0.4);
+  background-image: url('../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png');
   background-size: cover;
-  background-position: center;
-  background-image: url(../../images/background.png);
-}
-
-@media screen and (max-width: 1023px) {
-  .header {
-    min-height: 400px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    min-height: 536px;
-  }
+  overflow-x: hidden;
 }

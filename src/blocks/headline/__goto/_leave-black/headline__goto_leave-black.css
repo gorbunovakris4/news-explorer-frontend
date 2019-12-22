@@ -1,0 +1,13 @@
+.headline__goto_black.headline__goto_leave-black{
+    border: 1px solid #1A1B22;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding-left: 19px;
+    padding-top: 12px;
+    padding-right: 19px;
+    padding-bottom: 12px;
+    height: 48px;
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+}

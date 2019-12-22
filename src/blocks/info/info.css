@@ -1,0 +1,15 @@
+@import url(./__subtitle/info__subtitle.css);
+@import url(./__title/info__title.css);
+@import url(./__keywords/info__keywords.css);
+@import url(./__text/info__text.css);
+
+.info {
+    min-height: 294px;
+    padding-left: 104px;
+}
+
+.info.info_clients {
+    min-height: 294px;
+    padding-left: 104px;
+    margin-bottom: 72px;
+}
