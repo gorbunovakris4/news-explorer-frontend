@@ -3,3 +3,11 @@
     line-height: 22px;
     margin-bottom: 18px;
 }
+
+
+@media screen and (max-width: 1023px) {
+    .card__text {
+        max-height: 88px;
+        overflow-y: hidden;
+    }
+  }

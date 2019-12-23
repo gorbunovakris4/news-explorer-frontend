@@ -7,3 +7,11 @@
   display: flex;
   padding-left: 104px;
 }
+
+@media screen and (max-width: 1023px) {
+  .technology {
+    height: 340px;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+}

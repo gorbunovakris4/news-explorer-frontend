@@ -10,5 +10,6 @@
 @media screen and (max-width: 1023px) {
   .headline__goto.headline__goto_current {
     height: 67px;
+    padding-top: 22px;
   }
 }

@@ -9,3 +9,9 @@
     padding-left: 104px;
     padding-right: 104px;
 }
+@media screen and (max-width: 1023px) {
+  .slider {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

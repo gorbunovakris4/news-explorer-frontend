@@ -9,3 +9,11 @@
   box-sizing: border-box;
   border-radius: 100px;
 }
+
+@media screen and (max-width: 1023px) {
+  .search__input {
+    margin-top: 48px;
+    width: 448px;
+    margin-left: 40px;
+  }
+}

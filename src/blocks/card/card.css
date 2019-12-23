@@ -18,3 +18,10 @@
     flex-direction: column;
     position: relative;
 }
+
+@media screen and (max-width: 1023px) {
+    .card {
+        width: 224px;
+        height: 420px;
+    }
+  }

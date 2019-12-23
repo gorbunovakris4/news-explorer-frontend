@@ -6,3 +6,9 @@
   width: 20px;
   height: 20px;
 }
+
+@media screen and (max-width: 1023px) {
+  .footer__network-link {
+     margin-left: 16px;
+}
+}

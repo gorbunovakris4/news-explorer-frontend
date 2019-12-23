@@ -3,3 +3,9 @@
   display: flex;
   margin-right: 106px;
 }
+
+@media screen and (max-width: 1023px) {
+  .footer__networks {
+     margin-right: 40px;
+}
+}

@@ -29,10 +29,11 @@ const swiper = new Swiper('.swiper-container', {
     1023: {
       slidesPerView: 3,
       spaceBetween: 10,
+      slidesPerGroup: 3,
     },
   },
   navigation: {
     nextEl: '.swiper-button-next_mine',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-prev_mine',
   },
 });

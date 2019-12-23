@@ -12,9 +12,12 @@
 @import url(./blocks/about-author/about-author.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/preloader/preloader.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup-for-profile/popup-for-profile.css);
 
 body {
-  background-color: #fff;  
+  background-color: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
 }

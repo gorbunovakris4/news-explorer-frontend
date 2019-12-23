@@ -1,0 +1,9 @@
+@import url(./_blue/popup__change_blue.css);
+
+.popup__change {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 16px;
+  color: #000000;
+}

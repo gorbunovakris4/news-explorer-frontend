@@ -3,3 +3,11 @@
     margin-bottom: 24px;
     margin-right: 24px;
 }
+
+@media screen and (max-width: 1023px) {
+    .card__content {
+        margin-left: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+  }

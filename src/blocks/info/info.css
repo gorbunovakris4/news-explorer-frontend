@@ -13,3 +13,16 @@
     padding-left: 104px;
     margin-bottom: 72px;
 }
+
+@media screen and (max-width: 1023px) {
+  .info {
+    padding-left: 40px;
+    min-height: 240px;
+  }
+  .info.info_clients {
+    min-height: 294px;
+    padding-left: 40px;
+    padding-top: 0;
+    margin-bottom: 32px;
+}
+}

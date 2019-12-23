@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,27 @@
 
 <body>
   <div class="page">
-    <header class="header">
+      <header class="header header_mobile">
+          <section class="headline headline_mobile">
+            <h3 class="headline__title headline__title_mobile">NewsExplorer</h3>
+            <div class="headline__menu-icon_mobile"></div>
+            <nav class="headline__menu headline__menu_mobile">
+              <a class="headline__goto headline__goto_mobile" href="./index.html">Главная</a>
+              <a class="headline__goto headline__goto_mobile" href="./about/index.html">О проекте</a>
+              <a class="headline__goto headline__goto_mobile" href="./saved/index.html">Авторизоваться</a>
+            </nav>
+          </section>
+          <section class="search">
+            <h1 class="search__title">Что в мире творится?</h1>
+            <h2 class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
+            </h2>
+            <div class="search__field">
+              <input class="search__input" placeholder="Введите тему новости">
+              <button class="search__button">Искать</button>
+            </div>
+          </section>
+        </header>
+    <!-- <header class="header">
       <section class="headline">
         <h3 class="headline__title">NewsExplorer</h3>
         <nav class="headline__menu">
@@ -32,7 +52,7 @@
           <button class="search__button">Искать</button>
         </div>
       </section>
-    </header>
+    </header> -->
 
     <main class="content">
 
@@ -45,7 +65,7 @@
         <div class="not-found">
           <img class="not-found__picture" alt="nothing found" src="./images/not-found.svg">
           <h3 class="not-found__title">Ничего не найдено</h3>
-          <p class="not-found__text">К сожалению по вашему запросу 
+          <p class="not-found__text">К сожалению по вашему запросу
             ничего не найдено.</p>
           </div>
 
@@ -157,7 +177,57 @@
       </nav>
     </footer>
   </div>
+  <!-- add popup_is-opened -->
+  <div class="popup popup-for-profile">
+    <div class="popup__content">
+      <img src="./images/close.svg" alt="close icon" class="popup__close popup-for-profile__close">
+      <h3 class="popup__title">Войти</h3>
+      <form class="popup__form" name="login">
+          <p class="popup__label">Email</p>
+          <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите почту">
+          <span class="popup__error"></span>
+          <p class="popup__label">Пароль</p>
+          <input type="password" name="password" class="popup__input popup__input_type_password" placeholder="Введите пароль">
+          <span class="popup__error"></span>
+          <button type class="button popup__button popup-for-profile__button">Войти</button>
+          <div class="popup__change">
+          <span class="popup__another">или</span>
+          <span class="popup__change-type">Зарегестрироваться</span>
+        </div>
+      </form>
+    </div>
+  </div>
 
+  <div class="popup popup-for-profile">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="close icon" class="popup__close popup-for-profile__close">
+        <h3 class="popup__title">Зарегестрироваться</h3>
+        <form class="popup__form" name="login">
+            <p class="popup__label">Email</p>
+            <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите почту">
+            <span class="popup__error"></span>
+            <p class="popup__label">Пароль</p>
+            <input type="password" name="password" class="popup__input popup__input_type_password" placeholder="Введите пароль">
+            <span class="popup__error"></span>
+            <p class="popup__label">Имя</p>
+            <input type="text" name="name" class="popup__input popup__input_type_password" placeholder="Введите свое имя">
+            <span class="popup__error"></span>
+            <button type class="button popup__button popup-for-profile__button">Зарегестрироваться</button>
+            <div class="popup__change">
+            <span class="popup__another">или</span>
+            <span class="popup__change-type">Войти</span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_no-form">
+        <div class="popup__content popup__content_no-form">
+          <img src="./images/close.svg" alt="close icon" class="popup__close popup-for-profile__close">
+          <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+          <p class="popup__change popup__change_blue">Выполнить вход</p>
+        </div>
+      </div>
 
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
