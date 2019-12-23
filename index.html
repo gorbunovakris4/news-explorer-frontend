@@ -8,224 +8,211 @@
   <meta name="author" content="Kristina Gorbunova">
   <meta name="desription" content="News exploring website">
   <title>News Explorer</title>
-  <link rel="icon" href="./images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/style.025746b7b0605f247213.css?c0c5d9ee5aba063c82c1">
+  <link rel="icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="css/style.a2ca0262c6b307fce2fc.css?53008c6f58503894fbd2">
 </head>
 
 <body>
-  <div class="root">
+  <div class="page">
+
     <header class="header">
-      <nav class="menu">
-        <a href="./" class="menu__logo">News Explorer</a>
-        <div class="menu__mobile"></div>
-        <ul class="menu__items">
-          <li class="menu__item menu__item_selected">
-            <a class="menu__link menu__link_selected" href="./">Главная</a>
-          </li>
-          <li class="menu__item"><a href="./about/index.html" class="menu__link">О проекте</a></li>
-          <li class="menu__item">
-            <a href="./articles/index.html" class="menu__link">Сохраненные статьи</a>
-          </li>
-          <li class="menu__item">
-            <span class="menu__link menu__link_logged">Kristina
-              <span class="menu__logout"></span>
-            </span>
-          </li>
-        </ul>
-      </nav>
-      <div class=header__title-wrapper>
-        <h1 class="header__title">Что в мире творится?</h1>
-        <h3 class="header__subtitle">
-          Находите самые свежие статьи на любую тему
-          и сохраняйте в своём личном кабинете.
-        </h3>
-        <form novalidate class="header__form" name="news-finder" method="POST">
-          <input class="header__form-input" type="text" name="search" placeholder="Введите тему новости" required />
-          <button class="button header__button" type="submit">Искать</button>
-        </form>
-      </div>
+      <section class="headline">
+        <h3 class="headline__title">NewsExplorer</h3>
+        <nav class="headline__menu">
+          <a class="headline__goto headline__goto_current" href="./index.html">Главная</a>
+          <a class="headline__goto" href="./about/index.html">О проекте</a>
+          <a class="headline__goto headline__goto_auth" href="./saved/index.html">Авторизоваться</a>
+        </nav>
+      </section>
+      <section class="search">
+        <h1 class="search__title">Что в мире творится?</h1>
+        <h2 class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
+        </h2>
+        <div class="search__field">
+          <input class="search__input" placeholder="Введите тему новости">
+          <button class="search__button">Искать</button>
+        </div>
+      </section>
     </header>
-    <section class=preloader>
-      <div class="preloader__message preloader__message_hide" id="preloader-searching">
-        <i class="circle-preloader"></i>
-        <h5 class="preloader__subtitle">Идет поиск новостей...</h5>
-      </div>
-      <div class="preloader__message preloader__message_hide" id="preloader-not-found">
-        <img class="preloader__icon" src="./images/not-found.svg" alt="Ничего не найдено.">
-        <h4 class="preloader__title">Ничего не найдено</h4>
-        <h5 class="preloader__subtitle">К сожалению по вашему запросу ничего не найдено.</h5>
-      </div>
-    </section>
-    <main class="results">
-      <h3 class="results__title">Результаты поиска</h3>
-      <div class="results__news">
-        <a href="#" class="card">
-          <div class="card__upper-body">
-            <div class="card__pic"></div>
-            <div class="card__icon card__icon_bin"></div>
-            <p class="card__warning">Убрать из сохраненных</p>
-            <p class="card__keyword">Тайга</p>
-            <div class="card__wrapper">
+
+    <main class="content">
+
+      <section class="search-results">
+        <div class="load">
+          <i class="load__preloader circle-preloader"></i>
+          <p class="load__message">Идет поиск новостей...</p>
+        </div>
+
+        <div class="not-found">
+          <img class="not-found__picture" alt="nothing found" src="./images/not-found.svg">
+          <h3 class="not-found__title">Ничего не найдено</h3>
+          <p class="not-found__text">К сожалению по вашему запросу
+            ничего не найдено.</p>
+        </div>
+
+        <h2 class="search-results__title">Результаты поиска</h2>
+        <div class="search-results__cards">
+          <div class="card">
+            <div class="card__icon"></div>
+            <p class="card__message">Сохранить</p>
+            <img class="card__picture" alt="photo for the article" src="./images/picture.jpg">
+            <div class="card__content">
               <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Национальное достояние – парки</h4>
-              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-                система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
+              <h3 class="card__title">Национальное достояние – парки</h3>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей:
+                сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
+                сегодня каждый
+                может приобщиться к природе.</p>
+              <a class="card__sourse" target="_blank" href="https://lenta.ru/">Лента.ру</a>
             </div>
           </div>
-          <p class="card__src">DZEN</p>
-        </a>
-        <a href="#" class="card">
-          <div class="card__upper-body">
-            <div class="card__pic"></div>
-            <div class="card__icon card__icon_bin"></div>
-            <p class="card__warning">Убрать из сохраненных</p>
-            <p class="card__keyword">Тайга</p>
-            <div class="card__wrapper">
+          <div class="card">
+            <div class="card__icon"></div>
+            <p class="card__message">Сохранить</p>
+            <img class="card__picture" alt="photo for the article" src="./images/picture.jpg">
+            <div class="card__content">
               <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Национальное достояние – парки</h4>
-              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-                система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
+              <h3 class="card__title">Национальное достояние – парки</h3>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей:
+                сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
+                сегодня каждый
+                может приобщиться к природе.</p>
+              <a class="card__sourse" target="_blank" href="https://lenta.ru/">Лента.ру</a>
             </div>
           </div>
-          <p class="card__src">DZEN</p>
-        </a>
-        <a href="#" class="card">
-          <div class="card__upper-body">
-            <div class="card__pic"></div>
-            <div class="card__icon card__icon_bin"></div>
-            <p class="card__warning">Убрать из сохраненных</p>
-            <p class="card__keyword">Тайга</p>
-            <div class="card__wrapper">
+          <div class="card">
+            <div class="card__icon"></div>
+            <p class="card__message">Сохранить</p>
+            <img class="card__picture" alt="photo for the article" src="./images/picture.jpg">
+            <div class="card__content">
               <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Национальное достояние – парки</h4>
-              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-                система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
+              <h3 class="card__title">Национальное достояние – парки</h3>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей:
+                сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
+                сегодня каждый
+                может приобщиться к природе.</p>
+              <a class="card__sourse" target="_blank" href="https://lenta.ru/">Лента.ру</a>
             </div>
           </div>
-          <p class="card__src">DZEN</p>
-        </a>
-        <a href="#" class="card">
-          <div class="card__upper-body">
-            <div class="card__pic"></div>
-            <div class="card__icon card__icon_bin"></div>
-            <p class="card__warning">Убрать из сохраненных</p>
-            <p class="card__keyword">Тайга</p>
-            <div class="card__wrapper">
+          <div class="card">
+            <div class="card__icon"></div>
+            <p class="card__message">Сохранить</p>
+            <img class="card__picture" alt="photo for the article" src="./images/picture.jpg">
+            <div class="card__content">
               <p class="card__date">2 августа, 2019</p>
-              <h4 class="card__title">Национальное достояние – парки</h4>
-              <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-                система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
+              <h3 class="card__title">Национальное достояние – парки</h3>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей:
+                сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
+                сегодня каждый
+                может приобщиться к природе.</p>
+              <a class="card__sourse" target="_blank" href="https://lenta.ru/">Лента.ру</a>
             </div>
           </div>
-          <p class="card__src">DZEN</p>
-        </a>
-      </div>
-      <button class="button results__button">Показать еще</button>
+          <div class="card">
+            <div class="card__icon"></div>
+            <p class="card__message">Сохранить</p>
+            <img class="card__picture" alt="photo for the article" src="./images/picture.jpg">
+            <div class="card__content">
+              <p class="card__date">2 августа, 2019</p>
+              <h3 class="card__title">Национальное достояние – парки</h3>
+              <p class="card__text">В 2016 году Америка отмечала важный юбилей:
+                сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и
+                сегодня каждый
+                может приобщиться к природе.</p>
+              <a class="card__sourse" target="_blank" href="https://lenta.ru/">Лента.ру</a>
+            </div>
+          </div>
+        </div>
+        <div class="search-results__more">Показать еще</div>
+      </section>
+
+      <section class="about-author">
+
+        <img alt="author's photo" class="about-author__photo" src="./images/image-02.png">
+
+        <div class="about-author__text">
+          <h2 class="about-author__title">Об авторе</h2>
+          <p class="about-author__main-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+            чем вы занимаетесь, какими технологиями разработки владеете.
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+            потенциальным заказчикам.</p>
+        </div>
+
+      </section>
     </main>
-    <section class="about">
-      <img class="about__photo" src="./images/me.png" alt="Фото автора">
-      <div>
-        <h3 class="about__title">Об авторе</h3>
-        <p class="about__text">
-          Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
-          чем вы занимаетесь, какими технологиями разработки владеете.
-        </p>
-        <p class="about__text">
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
-          потенциальным заказчикам.
-        </p>
-      </div>
-    </section>
+
     <footer class="footer">
-      <p class="footer__legal">© 2019 Kristina Gorbunova</p>
+      <p class="footer__copyright">&copy; 2019. Gorbunova Kristina</p>
       <nav>
         <ul class="footer__menu">
-          <li class="footer__menu-item"><a href="./">Главная</a></li>
-          <li class="footer__menu-item"><a href="./about/index.html">О проекте</a></li>
-          <li class="footer__menu-item"><a href="https://praktikum.yandex.ru" target="_blank">Яндекс.Практикум</a></li>
+          <li><a class="footer__link footer__link_first" href="./index.html">Главная</a></li>
+          <li><a class="footer__link" href="./about/index.html">О проекте</a></li>
+          <li><a class="footer__link" target="_blank" href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
         </ul>
       </nav>
-      <p class="footer__links">
-        <a href="https://github.com/gorbunovakris4/" class="footer__social-icon" target="_blank">
-          <img src="./images/git.svg" alt="GitHub Logo">
-        </a>
-        <a href="https://facebook.com" class="footer__social-icon" target="_blank">
-          <img src="./images/facebook.svg" alt="Facebook Logo">
-        </a>
-      </p>
+      <nav>
+        <div class="footer__networks">
+          <a class="footer__network-link footer__network-link_github" target="_blank" href="https://github.com"></a>
+          <a class="footer__network-link footer__network-link_fb" target="_blank" href="https://facebook.com"></a>
+        </div>
+      </nav>
     </footer>
   </div>
-  <!-- Popups -->
-  <div class="additional">
-    <section class="authpopup authpopup_hide" id="loginpopup">
-      <form class="authpopup__form" name="login">
-        <div class="authpopup__close" id="close-loginpopup"></div>
-        <h4 class="authpopup__title">Вход</h4>
-        <span class="authpopup__subtitle">E-mail</span>
-        <input class="authpopup__input" name="email" type="email" placeholder="Введите почту" required>
-        <span class="authpopup__error-message" id="error-email-login">
-          Введите корректный адресe-mail
-        </span>
-        <span class="authpopup__subtitle">Пароль</span>
-        <input class="authpopup__input" name="password" type="password" placeholder="Введите пароль" required>
-        <span class="authpopup__error-message authpopup__error-message_hide" id="error-password-login">
-          Поле не может быть пустым!
-        </span>
-        <span class="authpopup__error-message authpopup__error-message_usr-exists" id="error-not-logged">
-          Неправильный логин или пароль
-        </span>
-        <button class="button authpopup__button" name="login-button" type="submit" disabled>Войти</button>
-        <span class="authpopup__other-action">
-          или <span class="authpopup__other-action-click" id="open-signuppopup">Зарегистрироваться</span>
-        </span>
+  <!-- add popup_is-opened -->
+  <div class="popup popup-for-profile">
+    <div class="popup__content">
+      <img src="./images/close.svg" alt="close icon" class="popup__close popup-for-profile__close">
+      <h3 class="popup__title">Войти</h3>
+      <form class="popup__form" name="login">
+        <p class="popup__label">Email</p>
+        <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите почту">
+        <span class="popup__error"></span>
+        <p class="popup__label">Пароль</p>
+        <input type="password" name="password" class="popup__input popup__input_type_password"
+          placeholder="Введите пароль">
+        <span class="popup__error"></span>
+        <button type class="button popup__button popup-for-profile__button">Войти</button>
+        <div class="popup__change">
+          <span class="popup__another">или</span>
+          <span class="popup__change-type">Зарегестрироваться</span>
+        </div>
       </form>
-    </section>
-
-    <section class="authpopup authpopup_hide" id="signuppopup">
-      <form class="authpopup__form" name="signup">
-        <div class="authpopup__close" id="close-signuppopup"></div>
-        <h4 class="authpopup__title">Регистрация</h4>
-        <span class="authpopup__subtitle">E-mail</span>
-        <input class="authpopup__input" name="email" placeholder="Введите почту" type="email" required>
-        <span class="authpopup__error-message authpopup__error-message_hide" id="error-email">Введите корректный адрес
-          e-mail</span>
-        <span class="authpopup__subtitle">Пароль</span>
-        <input class="authpopup__input" name="password" type="password" placeholder="Введите пароль" minlength="8"
-          required>
-        <span class="authpopup__error-message" id="error-password">
-          Длина пароля должна быть 8 или более символов
-        </span>
-        <span class="authpopup__subtitle">Имя</span>
-        <input class="authpopup__input" name="name" placeholder="Введите свое имя" required minlength="2">
-        <span class="authpopup__error-message authpopup__error-message_hide" id="error-name">
-          Введите имя!
-        </span>
-        <span class="authpopup__error-message authpopup__error-message_usr-exists" id="error-register">
-          Такой пользователь уже есть
-        </span>
-        <button class="button authpopup__button" name="signup-button" type="submit">Зарегистрироваться</button>
-        <span class="authpopup__other-action">
-          или <span class="authpopup__other-action-click" id="open-loginpopup">Войти</span>
-        </span>
-      </form>
-    </section>
-
-    <section class="authpopup authpopup_hide" id="signup-ok">
-      <form class="authpopup__form">
-        <div class="authpopup__close" id="close-signup-okpopup"></div>
-        <h4 class="authpopup__title">Пользователь успешно зарегистрирован!</h4>
-        <span class="authpopup__other-action authpopup__other-action_left">
-          <span class="authpopup__other-action-click" id="open-login-modal">Выполнить вход</span>
-        </span>
-      </form>
-    </section>
-    <div class="shadow"></div>
+    </div>
   </div>
-  <script src="main.c0c5d9ee5aba063c82c1.js?c0c5d9ee5aba063c82c1"></script>
+
+  <div class="popup popup-for-profile">
+    <div class="popup__content">
+      <img src="./images/close.svg" alt="close icon" class="popup__close popup-for-profile__close">
+      <h3 class="popup__title">Зарегестрироваться</h3>
+      <form class="popup__form" name="login">
+        <p class="popup__label">Email</p>
+        <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="Введите почту">
+        <span class="popup__error"></span>
+        <p class="popup__label">Пароль</p>
+        <input type="password" name="password" class="popup__input popup__input_type_password"
+          placeholder="Введите пароль">
+        <span class="popup__error"></span>
+        <p class="popup__label">Имя</p>
+        <input type="text" name="name" class="popup__input popup__input_type_password" placeholder="Введите свое имя">
+        <span class="popup__error"></span>
+        <button type class="button popup__button popup-for-profile__button">Зарегестрироваться</button>
+        <div class="popup__change">
+          <span class="popup__another">или</span>
+          <span class="popup__change-type">Войти</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup_no-form">
+    <div class="popup__content popup__content_no-form">
+      <img src="./images/close.svg" alt="close icon" class="popup__close popup-for-profile__close">
+      <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+      <p class="popup__change popup__change_blue">Выполнить вход</p>
+    </div>
+  </div>
+
+  <script src="main.53008c6f58503894fbd2.js?53008c6f58503894fbd2"></script>
 </body>
 
 </html>

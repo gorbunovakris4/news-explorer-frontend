@@ -7,259 +7,178 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Kristina Gorbunova">
   <meta name="desription" content="News exploring website">
-  <title>News Explorer / О проекте</title>
-  <link rel="stylesheet" href="../css/style.2e5daf9151b6a4d54e06.css?c0c5d9ee5aba063c82c1">
-  <link rel="icon" href=".././images/favicon.png" type="image/png">
+  <title>News Explorer</title>
+  <link rel="icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/style.cebb91d5402b0d5863d5.css?53008c6f58503894fbd2">
 </head>
 
 <body>
-  <div class="root">
-    <header class="header header_white">
-      <nav class="menu menu_black">
-        <a href="../" class="menu__logo menu__logo_black">News Explorer</a>
-        <div class="menu__mobile menu__mobile_black" id="mobile-menu"></div>
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a href="../" class="menu__link menu__link_black">Главная</a>
-          </li>
-          <li class="menu__item menu__item_selected-black">
-            <a href="./" class="menu__link menu__link_selected-black">О проекте</a>
-          </li>
-          <li class="menu__item"><a href="../articles/" class="menu__link menu__link_black">Сохраненные
-              статьи</a></li>
-          <li class="menu__item">
-            <span class="menu__link menu__link_logged  menu__link_logged-black">
-              Kristina <span class="menu__logout menu__logout_black"></span>
-            </span>
-          </li>
-        </ul>
+  <div class="page">
+    <header class="headline headline_black">
+      <h3 class="headline__title">NewsExplorer</h3>
+      <nav class="headline__menu">
+        <a class="headline__goto_black" href="../index.html">Главная</a>
+        <a class="headline__goto_black headline__goto_current-black" href="./index.html">О проекте</a>
+        <a class="headline__goto_black" href="../saved/index.html">Сохранённые статьи</a>
+        <div class="headline__goto_black headline__goto_leave-black">
+          <a class="headline__name" href="./index.html">Kristina</a>
+          <img alt="out" src="../images/out_black.svg">
+        </div>
       </nav>
     </header>
-    <main class="customers">
-      <h1 class="customers__title">Клиентам</h1>
-      <p class="customers__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
-        научился студент, какими технологиями владеет. Вёрстка сайта выполнена по методологии БЭМ. </p>
-      <p class="customers__text">Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и
-        функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле
-        поддерживать.</p>
-      <p class="customers__text">Студент самостоятельно написал серверный код. В нём реализована функциональность
-        регистрации и входа в систему. Сайт позволяет искать новости за прошедшую неделю и сохранять понравившиеся в
-        личном кабинете. На сервере избранные новости хранятся в базе данных Mongo DB. Студент запрограммировал надёжный
-        сервер: отказоустойчивый и безопасный.</p>
-      <p class="customers__text">При создании проекта была использована сборка технологией Webpack. Это современный
-        подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
-        браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с
-        отображением. А значит, потенциальная аудитория возрастает.</p>
-      <p class="customers__text">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы
-        рекомендуем обратиться к этому студенту.</p>
-    </main>
-    <section class="tech">
-      <div class="tech__wrap">
-        <h2 class="tech__title">Используемые технологии</h2>
-        <div class="tech__logos">
-          <img src=".././images/html.svg" alt="HTML5">
-          <img src=".././images/css.svg" alt="CSS3">
-          <img src=".././images/js.svg" alt="JavaScript">
-          <img src=".././images/webpack.svg" alt="Webpack">
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <img class="about__photo" src=".././images/me.png" alt="Фото автора">
-      <div>
-        <h3 class="about__title">Об авторе</h3>
-        <p class="about__text">
-          Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
-          чем вы занимаетесь, какими технологиями разработки владеете.
-        </p>
-        <p class="about__text">
-          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
-          потенциальным заказчикам.
-        </p>
-      </div>
-    </section>
-    <section class="slider">
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">14 августа, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src=".././images/me.png" alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">1. Инга Иванова</h4>
-                  <p class="slider__commit-email">ingaiva@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                With Emmet, you can type CSS-like expressions
-                that can be dynamically parsed, and produce
-                output depending on what you type in the abb...
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">14 августа, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src=".././images/me.png" alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">2. Инга Иванова</h4>
-                  <p class="slider__commit-email">ingaiva@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                With Emmet, you can type CSS-like expressions
-                that can be dynamically parsed, and produce
-                output depending on what you type in the abb...
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">14 августа, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src=".././images/me.png" alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">3. Инга Иванова</h4>
-                  <p class="slider__commit-email">ingaiva@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                With Emmet, you can type CSS-like expressions
-                that can be dynamically parsed, and produce
-                output depending on what you type in the abb...
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">14 августа, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src=".././images/me.png" alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">4. Инга Иванова</h4>
-                  <p class="slider__commit-email">ingaiva@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                With Emmet, you can type CSS-like expressions
-                that can be dynamically parsed, and produce
-                output depending on what you type in the abb...
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">14 августа, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src=".././images/me.png" alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">5. Инга Иванова</h4>
-                  <p class="slider__commit-email">ingaiva@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                With Emmet, you can type CSS-like expressions
-                that can be dynamically parsed, and produce
-                output depending on what you type in the abb...
-              </p>
-            </a>
-          </div>
 
+    <main class="content">
+      <section class="info info_clients">
+        <h2 class="info__title info__title_clients">Клиентам</h2>
+        <p class="info__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+        <p class="info__text">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+          Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям.
+          Также сайт проще и дешевле поддерживать.
+        </p>
+        <p class="info__text">Студент самостоятельно написал серверный код. В нём реализована функциональность регистрации и входа в систему.
+           Сайт позволяет искать новости за прошедшую неделю и сохранять понравившиеся в личном кабинете.
+           На сервере избранные новости хранятся в базе данных Mongo DB. Студент запрограммировал надёжный сервер: отказоустойчивый и безопасный.
+        </p>
+        <p class="info__text">При создании проекта была использована сборка технологией Webpack.
+          Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее.
+          Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем,
+          у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.
+        </p>
+        <p class="info__text">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.
+        </p>
+      </section>
+
+      <section class="technology">
+        <h2 class="technology__title">Используемые
+          технологии</h2>
+        <div class="technology__images">
+          <img class="technology__image" alt="html 5" src="../images/html.svg">
+          <img class="technology__image" alt="css 3" src="../images/css.svg">
+          <img class="technology__image" alt = "javascript" src="../images/js.svg">
+          <img class="technology__image" alt="webpack" src="../images/webpack.svg">
         </div>
-        <div class="swiper-pagination"></div>
+      </section>
+
+      <section class="about-author">
+
+        <img alt="author's photo" class="about-author__photo" src="../images/image-02.png">
+
+        <div class="about-author__text">
+          <h2 class="about-author__title">Об авторе</h2>
+          <p class="about-author__main-text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут,
+            чем вы занимаетесь, какими технологиями разработки владеете.
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+            потенциальным заказчикам.</p>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="slider__info">
+        <h2 class="slider__title">История коммитов из GitHub</h2>
+        <a class="slider__sourse" target="_blank" href="https://github.com">Открыть в  Github ></a>
       </div>
-      <div class="swiper-button-next next"></div>
-      <a class="button slider__git-button">Открыть в GitHub</a>
-    </section>
+
+        <div class="swiper-container swiper-container_mine">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide_mine">
+                <p class=swiper-slide__date>14 августа, 2019</p>
+                <div class="swiper-slide__author">
+                  <img class="swiper-slide__photo" alt="author's photo" src="../images/image-02.png">
+                  <div class="swiper-slide__data">
+                    <h3 class="swiper-slide__name">Антон Долинин</h3>
+                    <p class="swiper-slide__email">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="swiper-slide__text">With Emmet, you can type CSS-like expressions
+                  that can be dynamically parsed, and produce
+                  output depending on what you type in the abb...</p>
+              </div>
+              <div class="swiper-slide swiper-slide_mine">
+                <p class=swiper-slide__date>14 августа, 2019</p>
+                <div class="swiper-slide__author">
+                  <img class="swiper-slide__photo" alt="author's photo" src="../images/image-02.png">
+                  <div class="swiper-slide__data">
+                    <h3 class="swiper-slide__name">Антон Долинин</h3>
+                    <p class="swiper-slide__email">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="swiper-slide__text">With Emmet, you can type CSS-like expressions
+                  that can be dynamically parsed, and produce
+                  output depending on what you type in the abb...</p>
+              </div>
+              <div class="swiper-slide swiper-slide_mine">
+                <p class=swiper-slide__date>14 августа, 2019</p>
+                <div class="swiper-slide__author">
+                  <img class="swiper-slide__photo" alt="author's photo" src="../images/image-02.png">
+                  <div class="swiper-slide__data">
+                    <h3 class="swiper-slide__name">Антон Долинин</h3>
+                    <p class="swiper-slide__email">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="swiper-slide__text">With Emmet, you can type CSS-like expressions
+                  that can be dynamically parsed, and produce
+                  output depending on what you type in the abb...</p>
+              </div>
+              <div class="swiper-slide swiper-slide_mine">
+                <p class=swiper-slide__date>14 августа, 2019</p>
+                <div class="swiper-slide__author">
+                  <img class="swiper-slide__photo" alt="author's photo" src="../images/image-02.png">
+                  <div class="swiper-slide__data">
+                    <h3 class="swiper-slide__name">Антон Долинин</h3>
+                    <p class="swiper-slide__email">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="swiper-slide__text">With Emmet, you can type CSS-like expressions
+                  that can be dynamically parsed, and produce
+                  output depending on what you type in the abb...</p>
+              </div>
+              <div class="swiper-slide swiper-slide_mine">
+                <p class=swiper-slide__date>14 августа, 2019</p>
+                <div class="swiper-slide__author">
+                  <img class="swiper-slide__photo" alt="author's photo" src="../images/image-02.png">
+                  <div class="swiper-slide__data">
+                    <h3 class="swiper-slide__name">Антон Долинин</h3>
+                    <p class="swiper-slide__email">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="swiper-slide__text">With Emmet, you can type CSS-like expressions
+                  that can be dynamically parsed, and produce
+                  output depending on what you type in the abb...</p>
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+
+        <div class="swiper-button-prev swiper-button-prev_mine"></div>
+      <div class="swiper-button-next swiper-button-next_mine"></div>
+      </div>
+
+      </section>
+    </main>
+
     <footer class="footer">
-      <p class="footer__legal">© 2019 Kristina Gorbunova</p>
+      <p class="footer__copyright">&copy; 2019. Gorbunova Kristina</p>
       <nav>
         <ul class="footer__menu">
-          <li class="footer__menu-item"><a href="../">Главная</a></li>
-          <li class="footer__menu-item"><a href="./">О проекте</a></li>
-          <li class="footer__menu-item"><a href="https://praktikum.yandex.ru" target="_blank">Яндекс.Практикум</a></li>
+          <li><a class="footer__link footer__link_first" href="../index.html">Главная</a></li>
+          <li><a class="footer__link" href="./index.html">О проекте</a></li>
+          <li><a class="footer__link" target="_blank" href="https://praktikum.yandex.ru">Яндекс.Практикум</a></li>
         </ul>
       </nav>
-      <p class="footer__links">
-        <a href="https://github.com/gorbunovakris4/" class="footer__social-icon" target="_blank">
-          <img src=".././images/git.svg" alt="GitHub Logo">
-        </a>
-        <a href="https://facebook.com" class="footer__social-icon" target="_blank">
-          <img src=".././images/facebook.svg" alt="Facebook Logo">
-        </a>
-      </p>
+      <nav>
+        <div class="footer__networks">
+          <a class="footer__network-link footer__network-link_github" target="_blank" href="https://github.com"></a>
+          <a class="footer__network-link footer__network-link_fb" target="_blank" href="https://facebook.com"></a>
+        </div>
+      </nav>
     </footer>
   </div>
 
-  <div id="service-area">
-    <section class="authpopup authpopup_hide" id="loginpopup">
-      <form class="authpopup__form" name="login">
-        <div class="authpopup__close" id="close-loginpopup"></div>
-        <h4 class="authpopup__title">Вход</h4>
-        <span class="authpopup__subtitle">E-mail</span>
-        <input class="authpopup__input" name="email" type="email" placeholder="Введите почту" required>
-        <span class="authpopup__error-message" id="error-email-login">
-          Введите корректный адресe-mail
-        </span>
-        <span class="authpopup__subtitle">Пароль</span>
-        <input class="authpopup__input" name="password" type="password" placeholder="Введите пароль" required>
-        <span class="authpopup__error-message authpopup__error-message_hide" id="error-password-login">
-          Поле не может быть пустым!
-        </span>
-        <span class="authpopup__error-message authpopup__error-message_usr-exists" id="error-not-logged">
-          Неправильный логин или пароль
-        </span>
-        <button class="button authpopup__button" name="login-button" type="submit" disabled>Войти</button>
-        <span class="authpopup__other-action">
-          или <span class="authpopup__other-action-click" id="open-signuppopup">Зарегистрироваться</span>
-        </span>
-      </form>
-    </section>
-
-    <section class="authpopup authpopup_hide" id="signuppopup">
-      <form class="authpopup__form" name="signup">
-        <div class="authpopup__close" id="close-signuppopup"></div>
-        <h4 class="authpopup__title">Регистрация</h4>
-        <span class="authpopup__subtitle">E-mail</span>
-        <input class="authpopup__input" name="email" placeholder="Введите почту" type="email" required>
-        <span class="authpopup__error-message authpopup__error-message_hide" id="error-email">Введите корректный адрес
-          e-mail</span>
-        <span class="authpopup__subtitle">Пароль</span>
-        <input class="authpopup__input" name="password" type="password" placeholder="Введите пароль" minlength="8"
-          required>
-        <span class="authpopup__error-message" id="error-password">
-          Длина пароля должна быть 8 или более символов
-        </span>
-        <span class="authpopup__subtitle">Имя</span>
-        <input class="authpopup__input" name="name" placeholder="Введите свое имя" required minlength="2">
-        <span class="authpopup__error-message authpopup__error-message_hide" id="error-name">
-          Введите имя!
-        </span>
-        <span class="authpopup__error-message authpopup__error-message_usr-exists" id="error-register">
-          Такой пользователь уже есть
-        </span>
-        <button class="button authpopup__button" name="signup-button" type="submit" disabled>Зарегистрироваться</button>
-        <span class="authpopup__other-action">
-          или <span class="authpopup__other-action-click" id="open-loginpopup">Войти</span>
-        </span>
-      </form>
-    </section>
-
-    <section class="authpopup authpopup_hide" id="signup-ok">
-      <form class="authpopup__form">
-        <div class="authpopup__close" id="close-signup-okpopup"></div>
-        <h4 class="authpopup__title">Пользователь успешно зарегистрирован!</h4>
-        <span class="authpopup__other-action authpopup__other-action_left">
-          <span class="authpopup__other-action-click" id="open-login-modal">Выполнить вход</span>
-        </span>
-      </form>
-    </section>
-    <div class="shadow shadow_off"></div>
-  </div>
-  <script src="../about/about.c0c5d9ee5aba063c82c1.js?c0c5d9ee5aba063c82c1"></script>
+  <script src="../about/about.53008c6f58503894fbd2.js?53008c6f58503894fbd2"></script>
 </body>
 
 </html>
