@@ -6,8 +6,8 @@
   "scripts": {
     "build": "rimraf dist && webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --watch",
-    "deploy": "gh-pages -d dist",
-    "copy": "npm run build && scp -r ./dist/* kris4@84.201.169.58:/home/kris4/news-explorer-frontend"
+    "deploy-gh": "gh-pages -d dist",
+    "deploy": "npm run build && scp -r ./dist/* kris4@84.201.169.58:/home/kris4/news-explorer-frontend"
   },
   "repository": {
     "type": "git",
