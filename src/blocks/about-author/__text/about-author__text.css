@@ -10,3 +10,10 @@
       margin-top: 40px;
 }
 }
+
+@media screen and (max-width: 767px) {
+  .about-author__text {
+      margin-left: 16px;
+      margin-top: 24px;
+}
+}

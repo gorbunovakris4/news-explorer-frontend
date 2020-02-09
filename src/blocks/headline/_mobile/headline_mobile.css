@@ -1,5 +1,8 @@
 .headline.headline_mobile {
-    display: block;
-    background: #1A1B22;
-    width: 100vw;
+    display: flex;
+    width: calc(100vw - 32px);
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

@@ -15,3 +15,10 @@
     padding-left: 40px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .technology {
+    padding-left: 16px;
+    height: 450px;
+  }
+}

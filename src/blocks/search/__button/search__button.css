@@ -10,3 +10,12 @@
   color: white;
   margin-left: -150px;
 }
+
+@media screen and (max-width: 767px) {
+  .search__button {
+    margin-top: 16px;
+    width: 288px;
+    height: 56px;
+    margin-left: 0;
+  }
+}

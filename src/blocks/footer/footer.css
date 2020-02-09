@@ -3,6 +3,7 @@
 @import url(./__link/footer__link.css);
 @import url(./__networks/footer__networks.css);
 @import url(./__network-link/footer__network-link.css);
+@import url(./__navigation/footer__navigation.css);
 
 .footer {
   display: flex;
@@ -17,6 +18,15 @@
 
 @media screen and (max-width: 1023px) {
   .footer {
-      height: 64px;
+    height: 64px;
+  }
 }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    height: 150px;
+    flex-direction: column-reverse;
+    align-items: start;
+    padding-left: 16px;
+  }
 }

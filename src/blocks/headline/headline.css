@@ -3,6 +3,8 @@
 @import url(./__goto/headline__goto.css);
 @import url(./_mobile/headline_mobile.css);
 @import url(./_black/headline_black.css);
+@import url(./__menu-icon/headline__menu-icon.css);
+@import url(./_mobile-black/headline__mobile-black.css);
 
 .headline {
   color: white;

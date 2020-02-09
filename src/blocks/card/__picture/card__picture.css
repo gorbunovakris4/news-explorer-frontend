@@ -1,13 +1,21 @@
 .card__picture {
-    width: 400px;
-    height: 272px;
-    border-radius: 16px 16px 0 0;
-    box-sizing: border-box;
+  width: 400px;
+  height: 272px;
+  border-radius: 16px 16px 0 0;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1023px) {
-    .card__picture {
-        width: 224px;
-        height: 150px;
-    }
+  .card__picture {
+    width: 224px;
+    height: 150px;
   }
+}
+
+
+@media screen and (max-width: 767px) {
+  .card__picture {
+    width: 288px;
+    height: 196px;
+  }
+}

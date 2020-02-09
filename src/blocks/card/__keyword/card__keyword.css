@@ -1,16 +1,25 @@
 .card__keyword {
-    background: #FFFFFF;
-    border-radius: 10px;
-    box-sizing: border-box;
-    position: absolute;
-    left: 24px;
-    top: 24px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 24px;
-    padding-left: 12px;
-    padding-top: 8px;
-    padding-right: 12px;
-    padding-bottom: 8px;
-    color: #000000;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 767px) {
+  .card__keyword {
+    left: 16px;
+    top: 16px;
+
+  }
 }

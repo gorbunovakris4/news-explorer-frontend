@@ -11,11 +11,12 @@
   margin-top: 80px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .info__title {
     font-size: 30px;
     line-height: 34px;
-
+    width: 288px;
+    margin-bottom: 16px;
   }
 
   .info__title_clients {

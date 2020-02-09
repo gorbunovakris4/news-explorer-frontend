@@ -6,3 +6,9 @@
   line-height: 24px;
   padding-left: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__menu {
+     flex-direction: column;
+}
+}

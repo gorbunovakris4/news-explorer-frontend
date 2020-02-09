@@ -12,3 +12,11 @@
   }
 
 }
+
+@media screen and (max-width: 767px) {
+  .technology__images {
+    margin-top: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

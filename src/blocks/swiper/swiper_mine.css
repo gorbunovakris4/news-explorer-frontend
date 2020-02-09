@@ -4,8 +4,7 @@
 
 .swiper-button-next.swiper-button-next_mine {
     margin: 0;
-    background-color: #1A1B22;
-    color: white;
+    color: black;
     border-radius: 20px;
     box-sizing: border-box;
     transform: translate(30px, -40px);
@@ -16,8 +15,7 @@
 
 .swiper-button-prev.swiper-button-prev_mine {
   margin: 0;
-  background-color: #1A1B22;
-  color: white;
+  color:black;
   border-radius: 20px;
   box-sizing: border-box;
   transform: translate(-30px, -40px);

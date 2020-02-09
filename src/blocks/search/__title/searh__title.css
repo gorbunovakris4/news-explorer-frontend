@@ -18,3 +18,16 @@
     margin-left: -80px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .search__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    width: 285px;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}

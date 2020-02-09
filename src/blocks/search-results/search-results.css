@@ -18,3 +18,12 @@
         padding-bottom: 40px;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .search-results {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 10px;
+        padding-bottom: 32px;
+    }
+  }

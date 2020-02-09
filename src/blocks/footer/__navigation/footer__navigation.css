@@ -1,0 +1,13 @@
+.footer__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+@media screen and (max-width: 767px) {
+  .footer__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+  }
+}
